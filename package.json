@@ -1,0 +1,17 @@
+{
+  "name": "toilet.tech",
+  "version": "1.0.0",
+  "description": "A toilet finding text service",
+  "main": "main.js",
+  "scripts": {
+    "test": "toilet"
+  },
+  "keywords": [
+    "Toilet",
+    "Twilio",
+    "London",
+    "HackKings"
+  ],
+  "author": "Aayush Chadha, Raul Ignatius, Mihnea Savu",
+  "license": "MIT"
+}
