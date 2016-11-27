@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <style>
+      body {
+      font-family: "Lato", sans-serif;
+      transition: background-color .5s;
+      background: url("BG.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+      .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      }
+      .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s
+      }
+      .sidenav a:hover, .offcanvas a:focus{
+      color: #f1f1f1;
+      }
+      .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      }
+      #main {
+      transition: margin-left .5s;
+      padding: 16px;
+      }
+      @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+      }
+   </style>
+   <body>
+      <div id="hall" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closehall()">&times;</a>
+         <font color="white" size =6  >first place
+         <br>
+         second place
+         <br>
+         third place
+         </font>
+      </div>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <span style="color:white;font-size:30px;cursor:pointer" onclick="openhall()"> Hall of fame</span>
+         <div class="container">
+            <a href="#demo1"  data-toggle="collapse">Services</a>
+            <div id="demo1" class="collapse">
+               <font size=6>Text us your location and <br> you'll get the closest toilet </font>
+            </div>
+         </div>
+         <div class="container">
+            <a href="#demo"  data-toggle="collapse">About</a>
+            <div id="demo" class="collapse">
+               <font size=6> We're brand new</font>
+            </div>
+         </div>
+         <div class="container">
+            <a href="#demo3"  data-toggle="collapse">Contact</a>
+            <div id="demo3" class="collapse">
+               <font size=6>Our number is <br> 01347 722142</font>
+            </div>
+         </div>
+      </div>
+      <div id="main">
+         <font face="ADAM.CG PRO" size=10> Name goes here </font>
+         <br>
+         <br>
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Experience the magic</span>
+      </div>
+      <script>
+         function openhall() {
+             document.getElementById("hall").style.width = "400px";
+             document.getElementById("hall").style.marginLeft = "400px";
+             document.getElementById("main").style.marginLeft = "800px";
+             
+         }
+         function closehall() {
+             document.getElementById("hall").style.width = "0";
+             document.getElementById("hall").style.marginLeft= "0";
+             document.getElementById("main").style.marginLeft = "400px";
+         }
+         function openNav() {
+             document.getElementById("mySidenav").style.width = "400px";
+             document.getElementById("main").style.marginLeft = "400px";
+             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+         }
+         
+         function closeNav() {
+             document.getElementById("mySidenav").style.width = "0";
+             document.getElementById("main").style.marginLeft= "0";
+             document.body.style.backgroundColor = "white";
+         }
+      </script>
+   </body>
+</html>
