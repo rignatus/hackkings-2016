@@ -1,0 +1,23 @@
+body { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+	font-size: 60px;
+	color: #fff;
+	text-align: center;
+}
+#board-card {
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.7);
+	color: black;
+	font-size: 40px;
+
+}
+#pos {
+	margin-top: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
